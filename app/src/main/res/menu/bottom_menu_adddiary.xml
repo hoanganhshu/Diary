@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item1"
+        android:icon="@drawable/item"
+        />
+    <item
+        android:id="@+id/nav_item2"
+        android:icon="@drawable/item5"
+        />
+    <item
+        android:id="@+id/nav_item3"
+        android:icon="@drawable/item2"
+        />
+
+
+
+    <item
+        android:id="@+id/nav_item5"
+        android:icon="@drawable/item3"
+        
+        android:title="TODO" />
+
+
+
+
+
+
+</menu>

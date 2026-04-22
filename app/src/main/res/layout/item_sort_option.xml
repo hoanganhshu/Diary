@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="141dp"
+    android:layout_height="42dp"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="90dp"
+        android:layout_height="19dp"
+
+        android:text="@string/newest"
+        android:fontFamily="@font/nunito_medium"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/mark"  />
+</LinearLayout>

@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">私のアプリ</string>
+    <string name="delete">削除</string>
+    <string name="diary_something">日記</string>
+    <string name="skip">スキップ</string>
+    <string name="confirm">確認</string>
+    <string name="save">保存</string>
+    <string name="done">完了</string>
+    <string name="cancel">キャンセル</string>
+
+    <string name="often">どのくらいの頻度で日記を書きますか？</string>
+    <string name="please_select_your_option">オプションを選択してください</string>
+    <string name="often_1">初めてです</string>
+    <string name="often_2">昔は書いていました</string>
+    <string name="often_3">たまに</string>
+    <string name="often_4">よく</string>
+
+    <string name="age">年齢を教えてもらえますか？</string>
+    <string name="age_2">18-25</string>
+    <string name="age_3">26-35</string>
+    <string name="age_4">36-45</string>
+    <string name="age_5">46以上</string>
+    <string name="age_1">18未満</string>
+    <string name="what_your_favorite_color">好きな色は何ですか？</string>
+    <string name="today">今日</string>
+    <string name="photo">写真</string>
+    <string name="requestpermission">ライブラリを表示するには写真へのアクセスが必要です</string>
+
+    <string name="why">なぜ日記をつけたいですか？</string>
+    <string name="why_1">ストレスに対処するため</string>
+    <string name="why_2">日々の振り返り</string>
+    <string name="why_3">前向きな考え方のため</string>
+    <string name="why_4">創造性を刺激するため</string>
+    <string name="why_5">ただ何かを書き留めたい</string>
+
+    <string name="input_pin">PINを入力</string>
+    <string name="please_set_security">パスコードを忘れた場合に備えてセキュリティ質問を設定してください</string>
+    <string name="forget_pass">パスワードを忘れた</string>
+    <string name="set_pin">PINを設定</string>
+    <string name="confirm_pin">PINを確認</string>
+    <string name="enter_your_pin">現在のPINを入力</string>
+    <string name="set_security_title">セキュリティ質問を設定</string>
+    <string name="question_1">好きな色は何ですか？</string>
+    <string name="hint">ここに回答を入力してください</string>
+    <string name="pin_dont_match">PINが一致しません</string>
+    <string name="question_2">好きな色は何ですか？</string>
+    <string name="question_3">好きな食べ物は何ですか？</string>
+    <string name="question_4">好きな映画は何ですか？</string>
+
+    <string name="my_diary">マイ日記</string>
+    <string name="calendar">カレンダー</string>
+    <string name="diary">日記</string>
+    <string name="mine">自分</string>
+    <string name="newest">新しい順</string>
+    <string name="oldest">古い順</string>
+    <string name="hanoi">ハノイ</string>
+    <string name="no_result">結果が見つかりません</string>
+    <string name="write_your_first">最初の記録をここに書いて思い出を残しましょう</string>
+    <string name="app_theme">アプリのテーマ</string>
+
+    <string name="passcode">パスコード</string>
+    <string name="mood_gallery">ムードギャラリー</string>
+    <string name="skip_mood_selection">ムード選択をスキップ</string>
+    <string name="language">言語</string>
+    <string name="date_time">日付と時間</string>
+    <string name="private_policy">プライバシーポリシー</string>
+    <string name="share">共有</string>
+    <string name="rate">評価する</string>
+    <string name="later">後で</string>
+    <string name="send_rate">評価を送信</string>
+    <string name="notification">通知</string>
+    <string name="repeat">繰り返し</string>
+    <string name="how_are_you">今日はどんな気分？</string>
+    <string name="see_more">もっと見る</string>
+
+    <string name="s">日</string>
+    <string name="m">月</string>
+    <string name="t">火</string>
+    <string name="w">水</string>
+    <string name="th">木</string>
+    <string name="f">金</string>
+    <string name="sa">土</string>
+
+    <string name="set_time">時間を設定</string>
+    <string name="hours">時間</string>
+    <string name="minutes">分</string>
+    <string name="passcode_protect">パスコード保護</string>
+    <string name="change_passcode">パスコードを変更</string>
+    <string name="change_security_question">セキュリティ質問を変更</string>
+
+    <string name="first_day">週の開始日</string>
+    <string name="date_format">日付形式</string>
+    <string name="time_format">時刻形式</string>
+    <string name="system_default">システムのデフォルト</string>
+    <string name="monday">月曜日</string>
+    <string name="saturday">土曜日</string>
+    <string name="sunday">日曜日</string>
+
+    <string name="theme">テーマ</string>
+    <string name="apply">適用</string>
+    <string name="delete_this_entry">この記録を削除しますか？</string>
+    <string name="delete_this_entry_text">削除すると元に戻せません</string>
+
+    <string name="font">フォント</string>
+    <string name="back_ground">背景</string>
+    <string name="simple">シンプル</string>
+    <string name="animal">動物</string>
+    <string name="food">食べ物</string>
+    <string name="holiday">祝日</string>
+
+
+        <string name="title">タイトル</string>
+        <string name="not_save_yet">変更内容を保存しますか？</string>
+        <string name="discard">破棄</string>
+        <string name="starting_here">ここから始める ...</string>
+        <string name="select_date">日付を選択</string>
+        <string name="select_language">言語を選択</string>
+        <string name="show_hours">08:00 AM</string>
+        <string name="continute">続ける</string>
+        <string name="you_can_select">複数の項目を選択できます</string>
+        <string name="select_one">1つ選択してください</string>
+        <string name="favorite_color">好きな色は何ですか？</string>
+        <string name="favorite_movie">好きな映画は何ですか？</string>
+        <string name="favorite_food">好きな食べ物は何ですか？</string>
+        <string name="input_your_anwser">ここに回答を入力してください</string>
+        <string name="all">すべて</string>
+        <string name="edit">編集</string>
+        <string name="applied">適用済み</string>
+        <string name="please_rate_us">評価をお願いします！</string>
+        <string name="what_do_you_think_about_app">このアプリについてどう思いますか？</string>
+        <string name="your_pin">あなたのPINは</string>
+        <string name="option">オプション</string>
+        <string name="defaut">デフォルト</string>
+        <string name="ok">OK</string>
+        <string name="security_save">セキュリティ質問を保存しました。</string>
+        <string name="wrong_anwser">回答が違います！</string>
+        <string name="enter_new_pin">新しいPINを入力してください</string>
+        <string name="incorrect_pin">現在のPINが正しくありません</string>
+        <string name="month">月</string>
+        <string name="year">年</string>
+        <string name="not_save_title">未保存</string>
+        <string name="not_save">まだセキュリティ質問が設定されていません。</string>
+        <string name="set_pin_security">まだPINが設定されていません。</string>
+
+
+</resources>

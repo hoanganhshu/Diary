@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/security">
+
+
+        <!-- Back -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_back"
+            android:tint="@android:color/black"
+
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:text="Set Security Question"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/nutino_extrabold"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_60sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="20dp"
+        android:text="Set Security Question"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilQuestion"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+
+        android:layout_width="@dimen/_0sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:boxCornerRadiusTopStart="@dimen/_14sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_14sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_14sdp"
+        app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
+        app:endIconMode="dropdown_menu"
+        app:boxBackgroundColor="@android:color/white"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/subTitle"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvQuestion"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/what_your_favorite_color"
+            android:singleLine="true"
+            android:paddingVertical="@dimen/_16sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAnswer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:boxCornerRadiusTopStart="@dimen/_14sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_14sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_14sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
+            app:endIconMode="dropdown_menu"
+            app:boxBackgroundColor="@android:color/white"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tilQuestion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/edtAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please input your answer here"
+                android:textStyle="normal"
+                android:singleLine="true"
+                android:paddingVertical="@dimen/_14sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Wrong Answer"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tilAnswer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_16sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="@dimen/_0sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:text="CONFIRM"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:background="@drawable/btn_confifm_selector"
+            app:cornerRadius="@dimen/_28sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

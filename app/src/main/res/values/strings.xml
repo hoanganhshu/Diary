@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="delete">Delete</string>
+    <string name="diary_something">DIARY SOMETHING</string>
+    <string name="skip">Skip</string>
+    <string name="confirm">Confirm</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="often"> How often do you write diaries?</string>
+    <string name="please_select_your_option">Please select your option</string>
+    <string name="often_1">I\'m new to it</string>
+    <string name="often_2">Used to do it a long time ago</string>
+    <string name="often_3">Occasionally </string>
+    <string name="often_4">Frequently</string>
+    <string name="age">May I ask your age?</string>
+    <string name="age_2">18-25</string>
+    <string name="age_3">26-35</string>
+    <string name="age_4">36-45</string>
+    <string name="age_5">46 and above</string>
+    <string name="age_1">Below 18</string>
+
+    <string name="why">Why do you wanna keep diaries? </string>
+    <string name="why_1">Deal with stress</string>
+    <string name="why_2">Daily reflections</string>
+    <string name="why_3">For a positive life mentality</string>
+    <string name="why_4">Inspire creativity</string>
+    <string name="why_5">Just want to write down something</string>
+
+    <string name="input_pin">Input your PIN</string>
+    <string name="please_set_security">Please set a security question in case you forget your passcode </string>
+    <string name="forget_pass">Forget Password</string>
+    <string name="set_pin">Set Your PIN</string>
+    <string name="confirm_pin">Confirm Your PIN</string>
+
+
+    <string name="title">Title</string>
+    <string name="not_save_yet">Do you want to save the changes you have made?</string>
+    <string name="discard">DISCARD</string>
+    <string name="starting_here"> Starting here ...</string>
+    <string name="select_date"> Select Date</string>
+    <string name="select_language">Select Language</string>
+    <string name="show_hours">08:00 AM</string>
+    <string name="continute"> CONTINUE</string>
+    <string name ="you_can_select"> You can select more than one option</string>
+    <string name="select_one">Please select one option</string>
+    <string name ="favorite_color">What is your favorite color?</string>
+    <string name="favorite_movie">What is your favorite movie?</string>
+    <string name="favorite_food">Whay is your favorite food?</string>
+    <string name="input_your_anwser">Please input your answer here</string>
+    <string name="all">All</string>
+    <string name="edit">Edit</string>
+    <string name="applied">Applied</string>
+    <string name="please_rate_us">Please give us a rating!</string>
+    <string name="what_do_you_think_about_app">What do you think about the app?</string>
+
+    <string name="your_pin"> Your PINS is</string>
+    <string name="option">Option</string>
+    <string name="defaut">Default</string>
+    <string name="ok">OK</string>
+    <string name="security_save">Security question saved.</string>
+
+
+    <string name="wrong_anwser">Wrong answer!</string>
+    <string name="enter_new_pin">Enter your new PINS</string>
+    <string name="incorrect_pin">Incorrect current PINS</string>
+
+
+    <string name="enter_your_pin">Enter Your Current PIN</string>
+    <string name="set_security_title">Set Security Question</string>
+    <string name="question_1">What is your favorite color?</string>
+    <string name="hint"> Please input your answer here</string>
+    <string name="pin_dont_match">Pin don\'t match</string>
+    <string name="question_2">What is your favorite color?</string>
+    <string name="question_3">What is your favorite food?</string>
+    <string name="question_4">What is your favorite movie?</string>
+
+
+    <string name="my_diary">My Diary</string>
+    <string name="calendar">Calendar</string>
+    <string name="diary">Diary</string>
+    <string name="mine">Mine</string>
+    <string name="newest">Newest First</string>
+    <string name="oldest">Oldest First</string>
+    <string name="hanoi"> Ha Noi</string>
+    <string name="no_result"> No Result Found</string>
+    <string name="write_your_first">Write your first entry here to save the moment </string>
+    <string name="app_theme">App Theme</string>
+
+    <string name="passcode">Passcode</string>
+    <string name="mood_gallery">Mood Gallery</string>
+    <string name="skip_mood_selection">Skip Mood Selection</string>
+    <string name="language">Language</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="private_policy">Private Policy</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate Us</string>
+    <string name="later">Later</string>
+    <string name="send_rate">Send Rate</string>
+    <string name="notification">Notification</string>
+    <string name="repeat">Repeat</string>
+    <string name="how_are_you">How are you today?</string>
+    <string name="see_more">See more moods</string>
+
+
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="th">Th</string>
+    <string name="f">F</string>
+    <string name="sa">Sa</string>
+    <string name="set_time">Set Time</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="passcode_protect">Passcode Protect</string>
+    <string name="change_passcode">Change Passcode</string>
+    <string name="change_security_question">Change Security Question</string>
+
+
+    <string name="first_day">First Day of Week</string>
+    <string name="date_format">Date Format</string>
+    <string name="time_format">Time Format</string>
+    <string name="system_default">System Default</string>
+    <string name="monday">Monday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+
+    <string name="theme">Theme</string>
+    <string name="apply">Apply</string>
+    <string name="delete_this_entry">Delete This Entry?</string>
+    <string name="delete_this_entry_text">Delete this entry is permanent and you can\'t undo it</string>
+
+    <string name="font">Font</string>
+    <string name="back_ground">Background</string>
+    <string name="simple">Simple</string>
+    <string name="animal">Animal</string>
+    <string name="food">Food</string>
+    <string name="holiday">Holiday</string>
+    <string name="not_save">You have not set a security question yet.</string>
+    <string name="set_pin_security">You have not set a PIN yet</string>
+    <string name="month">Month</string>
+    <string name="year">Year\n</string>
+    <string name="not_save_title">Not Saved Yet</string>
+    <string name="what_your_favorite_color">What is your favorite color?</string>
+    <string name="today">Today</string>
+    <string name="photo">Photos</string>
+    <string name="requestpermission">Need photo access to display the library</string>
+
+
+</resources>

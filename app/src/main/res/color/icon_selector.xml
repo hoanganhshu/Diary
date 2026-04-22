@@ -1,0 +1,10 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/icon_select" android:state_checked="true"/>
+    <item android:color="@color/icon_unselect"/>
+
+
+
+        <corners android:radius="@dimen/sdp_16" />
+        <solid android:color="@color/lighter_gray" />
+
+</selector>

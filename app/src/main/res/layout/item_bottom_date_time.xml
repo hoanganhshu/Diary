@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.radiobutton.MaterialRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48sdp"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/_8sdp"
+    android:textStyle="bold"
+    android:text="@string/option"/>

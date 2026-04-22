@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="view.SearchActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginStart="@dimen/sdp_25"
+        app:queryBackground="@android:color/transparent"
+
+
+        android:layout_marginTop="@dimen/sdp_33"
+        android:layout_marginEnd="@dimen/sdp_20"
+        android:background="@drawable/searchview_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnClear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnClear"
+        android:layout_width="@dimen/sdp_20"
+        android:layout_height="@dimen/sdp_20"
+        android:layout_marginEnd="@dimen/sdp_25"
+        android:src="@drawable/delete_search"
+        app:layout_constraintTop_toTopOf="@id/searchview"
+        app:layout_constraintBottom_toBottomOf="@id/searchview"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDiariesSearch"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="@dimen/sdp_30"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/searchview"
+
+        tools:listitem="@layout/item_diary"
+        />
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/searchview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDone"
+            android:layout_width="@dimen/sdp_120"
+            android:layout_height="@dimen/sdp_120"
+            android:src="@drawable/emty"
+       />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sdp_12"
+            android:textColor="@color/black"
+            android:text="@string/no_result"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

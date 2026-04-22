@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.NotificationActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/sdp_16">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/sdp_32"
+                android:layout_height="@dimen/sdp_32"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:fontFamily="@font/nutino_extrabold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sdp_12"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNotification"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sdp_5"
+        app:cardCornerRadius="@dimen/sdp_18"
+
+        app:cardUseCompatPadding="true"
+        android:elevation="@dimen/sdp_2"
+        android:backgroundTint="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvNotification"
+                    android:layout_width="@dimen/sdp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nutino_extrabold"
+                    android:text="@string/notification"
+                    android:textColor="#444444"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchNotification"
+                    android:layout_width="wrap_content"
+                    app:thumbTint="@color/switch_thumb"
+                    app:trackTint="@color/switch_tint"
+
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNotificationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:text="@string/show_hours"
+                android:fontFamily="@font/nutino_extrabold"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#33AAAAAA" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+
+        app:cardCornerRadius="@dimen/sdp_18"
+        app:cardUseCompatPadding="true"
+        android:elevation="@dimen/sdp_2"
+        android:backgroundTint="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+          >
+
+            <TextView
+                android:id="@+id/tvRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repeat"
+                android:textColor="#444444"
+                android:fontFamily="@font/nutino_extrabold"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="@dimen/sdp_12" />
+
+            <!-- Day Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- S -->
+                <TextView
+                    android:id="@+id/day_sun"
+                    android:layout_width="@dimen/sdp_36"
+                    android:layout_height="@dimen/sdp_36"
+
+                    android:gravity="center"
+                    android:text="@string/s"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- M -->
+                <TextView
+                    android:id="@+id/day_mon"
+                    android:layout_width="@dimen/sdp_36"
+                    android:layout_height="@dimen/sdp_36"
+                    android:gravity="center"
+                    android:text="@string/m"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- T -->
+                <TextView
+                    android:id="@+id/day_tue"
+                    android:layout_width="@dimen/sdp_36"
+                    android:layout_height="@dimen/sdp_36"
+                    android:gravity="center"
+                    android:text="@string/t"
+                    android:textSize="14sp"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- W -->
+                <TextView
+                    android:id="@+id/day_wed"
+                    android:layout_width="@dimen/sdp_36"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_height="@dimen/sdp_36"
+                    android:gravity="center"
+                    android:text="@string/w"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- Th -->
+                <TextView
+                    android:id="@+id/day_thu"
+                    android:layout_width="@dimen/sdp_36"
+                    android:layout_height="@dimen/sdp_36"
+                    android:gravity="center"
+                    android:text="@string/th"
+                    android:textSize="12sp"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- F -->
+                <TextView
+                    android:id="@+id/day_fri"
+                    android:layout_width="@dimen/sdp_36"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_height="@dimen/sdp_36"
+                    android:gravity="center"
+                    android:text="@string/f"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginEnd="@dimen/sdp_8" />
+
+                <!-- Sa -->
+                <TextView
+                    android:id="@+id/day_sat"
+                    android:layout_width="@dimen/sdp_36"
+                    android:layout_height="@dimen/sdp_36"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="@string/sa"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/day_unselected"
+                    android:textColor="#BDBDBD" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_39sdp"
+
+        android:text="@string/save"
+        android:textStyle="bold"
+
+        android:fontFamily="@font/nunito_bold"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="@dimen/_60sdp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_done_button"
+
+        app:backgroundTint="@null"
+        android:stateListAnimator="@null" />
+
+
+</LinearLayout>

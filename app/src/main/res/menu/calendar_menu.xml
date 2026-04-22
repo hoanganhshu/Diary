@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newest"
+            android:title="@string/newest"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/oldest"
+            android:title="@string/oldest"
+            android:checkable="true" />
+    </group>
+</menu>

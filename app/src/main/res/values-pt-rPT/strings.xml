@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">A minha aplicação</string>
+    <string name="delete">Eliminar</string>
+    <string name="diary_something">DIÁRIO</string>
+    <string name="skip">Saltar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="save">Guardar</string>
+    <string name="done">Concluído</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="often">Com que frequência escreves diários?</string>
+    <string name="please_select_your_option">Por favor, escolhe uma opção</string>
+    <string name="often_1">Sou novo/a nisto</string>
+    <string name="often_2">Costumava fazê-lo há muito tempo</string>
+    <string name="often_3">Ocasionalmente</string>
+    <string name="often_4">Frequentemente</string>
+    <string name="what_your_favorite_color">Qual é a sua cor favorita?</string>
+    <string name="today">Hoje</string>
+    <string name="photo">Fotos</string>
+    <string name="requestpermission">Acesso a fotos necessário para exibir a biblioteca</string>
+
+    <string name="age">Posso perguntar a tua idade?</string>
+    <string name="age_2">18-25</string>
+    <string name="age_3">26-35</string>
+    <string name="age_4">36-45</string>
+    <string name="age_5">46 e acima</string>
+    <string name="age_1">Menos de 18</string>
+
+    <string name="why">Porque queres manter um diário?</string>
+    <string name="why_1">Lidar com o stress</string>
+    <string name="why_2">Reflexões diárias</string>
+    <string name="why_3">Para uma mentalidade positiva</string>
+    <string name="why_4">Inspirar criatividade</string>
+    <string name="why_5">Só quero escrever alguma coisa</string>
+
+    <string name="input_pin">Introduz o teu PIN</string>
+    <string name="please_set_security">Define uma pergunta de segurança caso te esqueças do teu código</string>
+    <string name="forget_pass">Esqueci-me da palavra-passe</string>
+    <string name="set_pin">Definir o teu PIN</string>
+    <string name="confirm_pin">Confirmar o teu PIN</string>
+    <string name="enter_your_pin">Introduz o teu PIN atual</string>
+    <string name="set_security_title">Definir pergunta de segurança</string>
+    <string name="question_1">Qual é a tua cor favorita?</string>
+    <string name="hint">Introduz aqui a tua resposta</string>
+    <string name="pin_dont_match">O PIN não coincide</string>
+    <string name="question_2">Qual é a tua cor favorita?</string>
+    <string name="question_3">Qual é a tua comida favorita?</string>
+    <string name="question_4">Qual é o teu filme favorito?</string>
+
+    <string name="my_diary">O meu diário</string>
+    <string name="calendar">Calendário</string>
+    <string name="diary">Diário</string>
+    <string name="mine">Meu</string>
+    <string name="newest">Mais recentes primeiro</string>
+    <string name="oldest">Mais antigos primeiro</string>
+    <string name="hanoi">Hanói</string>
+    <string name="no_result">Nenhum resultado encontrado</string>
+    <string name="write_your_first">Escreve aqui a tua primeira entrada para guardar o momento</string>
+    <string name="app_theme">Tema da app</string>
+
+    <string name="passcode">Código</string>
+    <string name="mood_gallery">Galeria de humor</string>
+    <string name="skip_mood_selection">Saltar seleção de humor</string>
+    <string name="language">Idioma</string>
+    <string name="date_time">Data &amp; hora</string>
+    <string name="private_policy">Política de privacidade</string>
+    <string name="share">Partilhar</string>
+    <string name="rate">Avalia-nos</string>
+    <string name="later">Mais tarde</string>
+    <string name="send_rate">Enviar avaliação</string>
+    <string name="notification">Notificações</string>
+    <string name="repeat">Repetir</string>
+    <string name="how_are_you">Como estás hoje?</string>
+    <string name="see_more">Ver mais humores</string>
+
+    <string name="s">D</string>
+    <string name="m">S</string>
+    <string name="t">T</string>
+    <string name="w">Q</string>
+    <string name="th">Q</string>
+    <string name="f">S</string>
+    <string name="sa">S</string>
+
+    <string name="set_time">Definir hora</string>
+    <string name="hours">Horas</string>
+    <string name="minutes">Minutos</string>
+    <string name="passcode_protect">Proteção por código</string>
+    <string name="change_passcode">Alterar código</string>
+    <string name="change_security_question">Alterar pergunta de segurança</string>
+
+    <string name="first_day">Primeiro dia da semana</string>
+    <string name="date_format">Formato de data</string>
+    <string name="time_format">Formato de hora</string>
+    <string name="system_default">Padrão do sistema</string>
+    <string name="monday">Segunda-feira</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+
+    <string name="theme">Tema</string>
+    <string name="apply">Aplicar</string>
+    <string name="delete_this_entry">Eliminar esta entrada?</string>
+    <string name="delete_this_entry_text">Eliminar esta entrada é permanente e não podes desfazer</string>
+
+    <string name="font">Fonte</string>
+    <string name="back_ground">Fundo</string>
+    <string name="simple">Simples</string>
+    <string name="animal">Animais</string>
+    <string name="food">Comida</string>
+    <string name="holiday">Feriados</string>
+
+
+
+
+        <string name="title">Título</string>
+        <string name="not_save_yet">Quer guardar as alterações que você fez?</string>
+        <string name="discard">DESCARTAR</string>
+        <string name="starting_here">Começar aqui ...</string>
+        <string name="select_date">Selecionar data</string>
+        <string name="select_language">Selecionar idioma</string>
+        <string name="show_hours">08:00 AM</string>
+        <string name="continute">CONTINUAR</string>
+        <string name="you_can_select">Você pode selecionar mais de uma opção</string>
+        <string name="select_one">Por favor, selecione uma opção</string>
+
+        <string name="favorite_color">Qual é a sua cor favorita?</string>
+        <string name="favorite_movie">Qual é o seu filme favorito?</string>
+        <string name="favorite_food">Qual é a sua comida favorita?</string>
+        <string name="input_your_anwser">Por favor, digite sua resposta aqui</string>
+
+        <string name="all">Todos</string>
+        <string name="edit">Editar</string>
+        <string name="applied">Aplicado</string>
+        <string name="please_rate_us">Por favor, deixe uma avaliação!</string>
+        <string name="what_do_you_think_about_app">O que você acha do aplicativo?</string>
+
+        <string name="your_pin">Seu PIN é</string>
+        <string name="option">Opção</string>
+        <string name="defaut">Padrão</string>
+        <string name="ok">OK</string>
+        <string name="security_save">Pergunta de segurança salva.</string>
+
+        <string name="wrong_anwser">Resposta incorreta!</string>
+        <string name="enter_new_pin">Digite seu novo PIN</string>
+        <string name="incorrect_pin">PIN atual incorreto</string>
+
+        <string name="month">Mês</string>
+        <string name="year">Ano</string>
+        <string name="not_save_title">Ainda não salvo</string>
+
+        <string name="not_save">Você ainda não definiu uma pergunta de segurança.</string>
+        <string name="set_pin_security">Você ainda não definiu um PIN.</string>
+
+
+</resources>

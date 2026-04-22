@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+     <LinearLayout
+         android:id="@+id/lineartext"
+         android:layout_width="match_parent"
+         app:layout_constraintStart_toStartOf="@id/moodCard"
+         android:orientation="horizontal"
+
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:text="@string/defaut"
+             android:textStyle="bold"
+
+             android:fontFamily="@font/nunito_bold"
+             android:id="@+id/titlemood"
+
+             android:textSize="20dp"
+             />
+         <TextView
+             android:id="@+id/appliedBadge"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="( Applied )"
+             android:textColor="?attr/colorPrimary"
+             android:textStyle="bold"
+             android:textSize="20dp"
+
+             android:visibility="gone"
+             app:layout_constraintStart_toEndOf="@id/titlemood"
+             app:layout_constraintBottom_toBottomOf="@id/titlemood"
+             android:layout_marginStart="8dp" />
+
+     </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/moodCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp"
+
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/lineartext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="20dp"
+        >
+
+    <GridLayout
+        android:id="@+id/gridMoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+
+        android:columnCount="4"
+        app:layout_constraintTop_toTopOf="@+id/titlemood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:rowCount="2"
+
+        android:alignmentMode="alignMargins"
+
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/mood1"
+            android:layout_width="56dp"
+            android:layout_margin="12dp"
+
+            android:layout_height="56dp"
+
+            android:src="@drawable/emoj1"
+            />
+
+        <ImageView
+            android:id="@+id/mood2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/emoj2"
+
+            />
+
+        <ImageView
+            android:id="@+id/mood3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/emoj3"
+
+            />
+
+        <ImageView
+            android:id="@+id/mood4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/emoj4"
+            />
+
+        <ImageView
+            android:id="@+id/mood5"
+            android:layout_width="56dp"
+            android:layout_margin="12dp"
+
+            android:layout_height="56dp"
+            android:src="@drawable/emoj5"
+
+            />
+
+        <ImageView
+            android:id="@+id/mood6"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/emoj6"
+
+            />
+
+        <ImageView
+            android:id="@+id/mood7"
+            android:layout_width="56dp"
+            android:layout_margin="12dp"
+
+            android:layout_height="56dp"
+            android:src="@drawable/emoj7"
+
+            />
+
+        <ImageView
+            android:id="@+id/mood8"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="12dp"
+
+
+            android:src="@drawable/emoj8"
+            />
+    </GridLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

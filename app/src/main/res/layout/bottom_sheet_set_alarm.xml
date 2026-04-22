@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_280sdp"
+    android:padding="@dimen/_24sdp"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_24sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/set_time"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nutino_extrabold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_16sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:gravity="top"
+
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/nutino_extrabold"
+                    android:paddingLeft="@dimen/_48sdp"
+                    android:text="@string/hours"
+                    />
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_48sdp"
+                    android:id="@+id/hours"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nutino_extrabold"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:text="@string/minutes"
+                    />
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_30sdp"
+
+                    android:id="@+id/minutes"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_0sdp"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:paddingLeft="@dimen/_30sdp"
+
+                    />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/amorpm"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDone"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+
+            android:text="@string/done"
+            android:textAllCaps="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+
+            android:fontFamily="@font/nunito_bold"
+            android:background="@drawable/bg_done_button"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

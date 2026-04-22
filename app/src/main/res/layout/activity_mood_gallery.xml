@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="view.NotificationActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:text="@string/mood_gallery"
+                android:fontFamily="@font/nutino_extrabold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_29sdp"
+        android:layout_height="@dimen/_0sdp"
+        android:layout_weight="1"
+        android:id="@+id/reyclerviewmooodgallery"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnApplyMoods"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_35sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+         app:cardCornerRadius="15dp"
+
+        android:layout_marginBottom="@dimen/_30sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+
+            android:fontFamily="@font/nunito_bold"
+            android:backgroundTint="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            android:textSize="14sp"
+            android:textColor="?attr/colorPrimary"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

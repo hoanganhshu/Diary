@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">मेरा ऐप</string>
+    <string name="delete">हटाएँ</string>
+    <string name="diary_something">डायरी</string>
+    <string name="skip">छोड़ें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="save">सेव करें</string>
+    <string name="done">हो गया</string>
+    <string name="cancel">रद्द करें</string>
+
+    <string name="often">आप कितनी बार डायरी लिखते हैं?</string>
+    <string name="please_select_your_option">कृपया एक विकल्प चुनें</string>
+    <string name="often_1">मैं इसमें नया/नई हूँ</string>
+    <string name="often_2">मैं बहुत पहले ऐसा करता/करती था</string>
+    <string name="often_3">कभी-कभी</string>
+    <string name="often_4">अक्सर</string>
+    <string name="what_your_favorite_color">आपका पसंदीदा रंग क्या है?</string>
+    <string name="today">आज</string>
+    <string name="photo">फ़ोटो</string>
+    <string name="requestpermission">लाइब्रेरी प्रदर्शित करने के लिए फ़ोटो एक्सेस आवश्यक है</string>
+
+    <string name="age">क्या मैं आपकी उम्र पूछ सकता/सकती हूँ?</string>
+    <string name="age_2">18-25</string>
+    <string name="age_3">26-35</string>
+    <string name="age_4">36-45</string>
+    <string name="age_5">46 या उससे अधिक</string>
+    <string name="age_1">18 से कम</string>
+
+    <string name="why">आप डायरी क्यों रखना चाहते हैं?</string>
+    <string name="why_1">तनाव से निपटना</string>
+    <string name="why_2">दैनिक आत्मचिंतन</string>
+    <string name="why_3">सकारात्मक सोच के लिए</string>
+    <string name="why_4">रचनात्मकता को प्रेरित करना</string>
+    <string name="why_5">बस कुछ लिखना चाहता/चाहती हूँ</string>
+
+    <string name="input_pin">अपना PIN दर्ज करें</string>
+    <string name="please_set_security">यदि आप पासकोड भूल जाएँ तो कृपया एक सुरक्षा प्रश्न सेट करें</string>
+    <string name="forget_pass">पासवर्ड भूल गए</string>
+    <string name="set_pin">अपना PIN सेट करें</string>
+    <string name="confirm_pin">अपने PIN की पुष्टि करें</string>
+    <string name="enter_your_pin">अपना वर्तमान PIN दर्ज करें</string>
+    <string name="set_security_title">सुरक्षा प्रश्न सेट करें</string>
+    <string name="question_1">आपका पसंदीदा रंग क्या है?</string>
+    <string name="hint">कृपया अपना उत्तर यहाँ लिखें</string>
+    <string name="pin_dont_match">PIN मेल नहीं खाता</string>
+    <string name="question_2">आपका पसंदीदा रंग क्या है?</string>
+    <string name="question_3">आपका पसंदीदा खाना क्या है?</string>
+    <string name="question_4">आपकी पसंदीदा फिल्म कौन-सी है?</string>
+
+    <string name="my_diary">मेरी डायरी</string>
+    <string name="calendar">कैलेंडर</string>
+    <string name="diary">डायरी</string>
+    <string name="mine">मेरा</string>
+    <string name="newest">नवीनतम पहले</string>
+    <string name="oldest">सबसे पुराने पहले</string>
+    <string name="hanoi">हनोई</string>
+    <string name="no_result">कोई परिणाम नहीं मिला</string>
+    <string name="write_your_first">इस पल को सहेजने के लिए अपनी पहली एंट्री यहाँ लिखें</string>
+    <string name="app_theme">ऐप थीम</string>
+
+    <string name="passcode">पासकोड</string>
+    <string name="mood_gallery">मूड गैलरी</string>
+    <string name="skip_mood_selection">मूड चयन छोड़ें</string>
+    <string name="language">भाषा</string>
+    <string name="date_time">तारीख़ और समय</string>
+    <string name="private_policy">गोपनीयता नीति</string>
+    <string name="share">शेयर करें</string>
+    <string name="rate">रेट करें</string>
+    <string name="later">बाद में</string>
+    <string name="send_rate">रेटिंग भेजें</string>
+    <string name="notification">सूचनाएँ</string>
+    <string name="repeat">दोहराएँ</string>
+    <string name="how_are_you">आज आप कैसे हैं?</string>
+    <string name="see_more">और मूड देखें</string>
+
+    <string name="s">र</string>
+    <string name="m">सो</string>
+    <string name="t">मं</string>
+    <string name="w">बु</string>
+    <string name="th">गु</string>
+    <string name="f">शु</string>
+    <string name="sa">श</string>
+
+    <string name="set_time">समय सेट करें</string>
+    <string name="hours">घंटे</string>
+    <string name="minutes">मिनट</string>
+    <string name="passcode_protect">पासकोड सुरक्षा</string>
+    <string name="change_passcode">पासकोड बदलें</string>
+    <string name="change_security_question">सुरक्षा प्रश्न बदलें</string>
+
+    <string name="first_day">सप्ताह का पहला दिन</string>
+    <string name="date_format">तारीख़ प्रारूप</string>
+    <string name="time_format">समय प्रारूप</string>
+    <string name="system_default">सिस्टम डिफ़ॉल्ट</string>
+    <string name="monday">सोमवार</string>
+    <string name="saturday">शनिवार</string>
+    <string name="sunday">रविवार</string>
+
+    <string name="theme">थीम</string>
+    <string name="apply">लागू करें</string>
+    <string name="delete_this_entry">क्या यह एंट्री हटाएँ?</string>
+    <string name="delete_this_entry_text">इस एंट्री को हटाना स्थायी है और इसे वापस नहीं किया जा सकता</string>
+
+    <string name="font">फ़ॉन्ट</string>
+    <string name="back_ground">बैकग्राउंड</string>
+    <string name="simple">सरल</string>
+    <string name="animal">जानवर</string>
+    <string name="food">खाना</string>
+    <string name="holiday">छुट्टियाँ</string>
+
+
+
+
+        <string name="title">शीर्षक</string>
+        <string name="not_save_yet">क्या आप किए गए बदलावों को सहेजना चाहते हैं?</string>
+        <string name="discard">रद्द करें</string>
+        <string name="starting_here">यहाँ से शुरू करें ...</string>
+        <string name="select_date">तारीख चुनें</string>
+        <string name="select_language">भाषा चुनें</string>
+        <string name="show_hours">08:00 AM</string>
+        <string name="continute">जारी रखें</string>
+        <string name="you_can_select">आप एक से अधिक विकल्प चुन सकते हैं</string>
+        <string name="select_one">कृपया एक विकल्प चुनें</string>
+        <string name="favorite_color">आपका पसंदीदा रंग कौन सा है?</string>
+        <string name="favorite_movie">आपकी पसंदीदा फ़िल्म कौन सी है?</string>
+        <string name="favorite_food">आपका पसंदीदा खाना क्या है?</string>
+        <string name="input_your_anwser">कृपया अपना उत्तर यहाँ लिखें</string>
+        <string name="all">सभी</string>
+        <string name="edit">संपादित करें</string>
+        <string name="applied">लागू किया गया</string>
+        <string name="please_rate_us">कृपया हमें रेटिंग दें!</string>
+        <string name="what_do_you_think_about_app">आपको ऐप कैसा लगा?</string>
+        <string name="your_pin">आपका PIN है</string>
+        <string name="option">विकल्प</string>
+        <string name="defaut">डिफ़ॉल्ट</string>
+        <string name="ok">ठीक है</string>
+        <string name="security_save">सुरक्षा प्रश्न सहेज लिया गया है।</string>
+        <string name="wrong_anwser">गलत उत्तर!</string>
+        <string name="enter_new_pin">अपना नया PIN दर्ज करें</string>
+        <string name="incorrect_pin">वर्तमान PIN गलत है</string>
+        <string name="month">महीना</string>
+        <string name="year">वर्ष</string>
+        <string name="not_save_title">अभी सहेजा नहीं गया</string>
+        <string name="not_save">आपने अभी तक सुरक्षा प्रश्न सेट नहीं किया है।</string>
+        <string name="set_pin_security">आपने अभी तक PIN सेट नहीं किया है।</string>
+
+
+</resources>

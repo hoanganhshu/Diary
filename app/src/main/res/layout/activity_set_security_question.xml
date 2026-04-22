@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/sdp_16">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/sdp_32"
+                android:layout_height="@dimen/sdp_32"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sdp_12"
+                android:fontFamily="@font/nutino_extrabold"
+                android:text="@string/set_security_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        >
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_set_security"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_medium"
+            android:textColor="#7A7A7A"
+            android:paddingStart="@dimen/sdp_40"
+            android:paddingEnd="@dimen/sdp_40"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/tilQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeWidth="0dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtQuestion"
+
+                android:layout_width="match_parent"
+                app:boxStrokeWidth="0dp"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/white"
+
+
+
+                app:hintEnabled="false"
+                app:endIconMode="dropdown_menu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/nutino_extrabold"
+                    android:paddingVertical="@dimen/_14sdp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="@string/favorite_color"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toBottomOf="@id/tilQuestion"
+
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/sdp_18"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/sdp_2"
+            app:cardBackgroundColor="@android:color/white">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAnswer"
+                android:textSize="14dp"
+                android:layout_height="@dimen/sdp_50"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito_medium"
+                android:textColor="@color/black"
+
+
+                android:paddingBottom="@dimen/sdp_10"
+
+                android:hint="@string/input_your_anwser"
+
+                android:background="@null"
+                android:layout_marginStart="@dimen/sdp_10"
+                android:layout_marginTop="@dimen/sdp_10"
+                />
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:id="@+id/wronganswer"
+
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+
+        android:text="@string/wrong_anwser"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginStart="@dimen/_30sdp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="@dimen/sdp_0"
+        android:layout_height="@dimen/sdp_56"
+        android:layout_marginStart="@dimen/sdp_40"
+        android:layout_marginEnd="@dimen/sdp_40"
+        android:layout_marginBottom="@dimen/sdp_22"
+        android:text="@string/confirm"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+
+        android:fontFamily="@font/nunito_bold"
+        android:enabled="false"
+        android:background="@drawable/btn_confifm_selector"
+        app:cornerRadius="@dimen/sdp_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

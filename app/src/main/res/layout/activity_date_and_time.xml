@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.NotificationActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_16sdp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:text="@string/date_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/firstday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_18sdp"
+
+        app:cardUseCompatPadding="true"
+        android:elevation="@dimen/_2sdp"
+        android:backgroundTint="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+
+
+                <TextView
+                    android:id="@+id/tvfirstday"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/first_day"
+                    android:textColor="#444444"
+                    android:textSize="14sp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvfirstdaysubtitle"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/system_default"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#33AAAAAA" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dateformate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_18sdp"
+
+        app:cardUseCompatPadding="true"
+        android:elevation="@dimen/_2sdp"
+        android:backgroundTint="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+
+
+            <TextView
+                android:id="@+id/tvdateformate"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/date_format"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvdateformatesubtitle"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/system_default"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#33AAAAAA" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/timeformate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_18sdp"
+
+        app:cardUseCompatPadding="true"
+        android:elevation="@dimen/_2sdp"
+        android:backgroundTint="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+
+
+            <TextView
+                android:id="@+id/tvNotification"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/time_format"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvNotificationTime"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/system_default"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#33AAAAAA" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_260sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_confirm_delete"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_85_63sdp"
+            android:layout_height="@dimen/_73sdp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/icon_cry"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="?attr/colorPrimary"
+            android:text="@string/not_save_title"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#A1524848"
+            android:text="@string/not_save_yet"
+            android:layout_marginHorizontal="@dimen/_70sdp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_34sdp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelConfirm"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_weight="1"
+                android:text="@string/discard"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+
+                android:fontFamily="@font/nunito_bold"
+                android:textStyle="bold"
+
+                android:letterSpacing="0.1"
+                app:cornerRadius="@dimen/_999sdp"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="?attr/colorPrimary"
+                app:backgroundTint="@android:color/transparent"
+                android:textColor="?attr/colorPrimary" />
+
+            <Space
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_0sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteConfirm"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="@dimen/_0sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:textAllCaps="true"
+
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                app:cornerRadius="@dimen/_999sdp"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

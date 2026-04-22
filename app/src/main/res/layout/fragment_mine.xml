@@ -1,0 +1,394 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!-- Card 1: App Theme -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAppTheme"
+                android:layout_width="@dimen/sdp_330"
+                android:layout_height="@dimen/sdp_179"
+
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/sdp_18"
+                app:cardUseCompatPadding="true"
+
+
+                android:elevation="@dimen/sdp_2"
+                android:foreground="?attr/selectableItemBackground"
+                android:backgroundTint="#FFFFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvAppTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_theme"
+                        android:fontFamily="@font/nutino_extrabold"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/sdp_10" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/sdp_16"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <FrameLayout
+                                android:layout_width="@dimen/sdp_65_5"
+                                android:layout_height="@dimen/sdp_100"
+                                android:layout_marginStart="@dimen/sdp_15"
+                                android:background="@drawable/bg_home_0"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:clipToOutline="true" />
+
+                            <!-- Item theme 2 -->
+                            <FrameLayout
+                                android:layout_width="@dimen/sdp_65_5"
+                                android:layout_height="@dimen/sdp_100"
+                                android:layout_marginStart="@dimen/sdp_9_21"
+
+                                android:background="@drawable/bg_home_1"
+                                android:clipToOutline="true" />
+
+                            <!-- Item theme 3 -->
+                            <FrameLayout
+                                android:layout_width="@dimen/sdp_65_5"
+                                android:layout_height="@dimen/sdp_100"
+                                android:layout_marginStart="@dimen/sdp_9_21"
+                                android:background="@drawable/bg_home_2"
+                                android:clipToOutline="true" />
+
+
+                            <FrameLayout
+                                android:layout_width="@dimen/sdp_65_5"
+                                android:layout_height="@dimen/sdp_100"
+                                android:layout_marginStart="@dimen/sdp_9_21"
+                                android:background="@drawable/bg_home_3"
+                                android:clipToOutline="true" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Notification -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNotification"
+                android:layout_width="@dimen/sdp_330"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/sdp_12"
+
+                android:layout_marginHorizontal="@dimen/sdp_10"
+                app:cardCornerRadius="@dimen/sdp_18"
+                app:cardUseCompatPadding="true"
+                android:elevation="@dimen/sdp_2"
+                android:backgroundTint="#FFFFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sdp_16"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+
+                        android:layout_marginTop="@dimen/sdp_11"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvNotification"
+                            android:layout_width="@dimen/sdp_0"
+                            android:fontFamily="@font/nutino_extrabold"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/notification"
+                            android:textColor="#444444"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchNotification"
+                            android:layout_width="wrap_content"
+                            app:thumbTint="@color/switch_thumb"
+                            app:trackTint="@color/switch_tint"
+                            android:layout_marginRight="@dimen/sdp_16"
+
+
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvNotificationTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sdp_8"
+                        android:fontFamily="@font/nutino_extrabold"
+                        android:text="@string/show_hours"
+                        android:textSize="24sp"
+                        android:paddingBottom="@dimen/sdp_11"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimary" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4: Settings (Passcode, Mood Gallery, Skip Mood Selection, Language, Date & Time) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSettings"
+                android:layout_width="@dimen/sdp_330"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sdp_12"
+
+                app:cardCornerRadius="@dimen/sdp_18"
+                app:cardUseCompatPadding="true"
+                android:elevation="@dimen/sdp_2"
+                android:backgroundTint="#FFFFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sdp_16"
+                    android:orientation="vertical"
+
+                    >
+
+                    <!-- Passcode -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/sdp_21"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_19"
+                            android:src="@drawable/passcode"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPasscode"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/passcode"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- Mood Gallery -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/sdp_25"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_19"
+                            android:src="@drawable/moodgalery"
+                             />
+
+                        <TextView
+                            android:id="@+id/tvMoodGallery"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/mood_gallery"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/sdp_25"
+                        android:paddingBottom="@dimen/sdp_20"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_20"
+                            android:src="@drawable/language"
+                             />
+
+                        <TextView
+                            android:id="@+id/tvLanguage"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+                            android:text="@string/language"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardOthers"
+                android:layout_width="@dimen/sdp_330"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sdp_12"
+
+                app:cardCornerRadius="@dimen/sdp_18"
+                app:cardUseCompatPadding="true"
+                android:elevation="@dimen/sdp_2"
+                android:backgroundTint="#FFFFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sdp_16"
+                    android:orientation="vertical"
+
+                    >
+
+                    <!-- Private Policy -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/sdp_21"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_19"
+                            android:src="@drawable/privatepolicy"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPrivacyPolicy"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+                            android:text="@string/private_policy"
+                            android:textColor="#444444"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- Share -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/sdp_25"
+                        android:gravity="center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_19"
+                            android:src="@drawable/share"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvShare"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+                            android:text="@string/share"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- Rate Us -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sdp_19"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/sdp_25"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/sdp_21"
+                      >
+
+                        <ImageView
+                            android:layout_width="@dimen/sdp_20"
+                            android:layout_height="@dimen/sdp_19"
+                            android:src="@drawable/rate"
+                             />
+
+                        <TextView
+                            android:id="@+id/tvRateUs"
+                            android:layout_width="@dimen/sdp_0"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/sdp_12"
+                            android:layout_weight="1"
+                            android:text="@string/rate"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

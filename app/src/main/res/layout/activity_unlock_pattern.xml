@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dot_security">
+
+    <!-- Skip -->
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:fontFamily="@font/nunito_medium"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="31dp"
+
+
+        android:layout_marginEnd="19dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logo box -->
+    <View
+        android:id="@+id/logoBox"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_pin"
+        android:fontFamily="@font/nutino_extrabold"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Error -->
+    <TextView
+        android:id="@+id/pinErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin don't match"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PIN Dots -->
+    <LinearLayout
+        android:id="@+id/pinDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="301dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="138dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/dot_empty" />
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/dot_empty" />
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/dot_empty" />
+        <View
+            android:id="@+id/dot4"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/dot_empty" />
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="240dp"
+        app:layout_constraintVertical_bias="0.5"
+
+        android:layout_height="0dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignBounds"
+
+        android:layout_marginHorizontal="60dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+
+        android:layout_marginTop="@dimen/_30sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/pinDots"
+
+        app:layout_constraintBottom_toTopOf="@id/tvForgot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:id="@+id/frame1"
+
+
+            android:layout_marginBottom="38dp"
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key1" android:text="1"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="38dp"
+
+
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key2" android:text="2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+
+            android:layout_marginBottom="38dp"
+            android:layout_gravity="right"
+            android:id="@+id/frame3"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key3" android:text="3"/>
+        </FrameLayout>
+
+        <!-- Row 2 -->
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+
+
+
+
+            android:layout_gravity="fill_horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key4" android:text="4"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key5" android:text="5"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+            android:layout_gravity="right"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key6" android:text="6"/>
+        </FrameLayout>
+
+        <!-- Row 3 -->
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+
+
+          >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key7" android:text="7"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key8" android:text="8"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginBottom="38dp"
+            android:layout_gravity="right"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key9" android:text="9"/>
+        </FrameLayout>
+
+        <!-- Row 4 -->
+        <!-- Cột 0 trống nhưng vẫn chiếm 1/3 để căn giữa hàng -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+
+            android:padding="8dp" />
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+
+
+            >
+            <androidx.appcompat.widget.AppCompatButton style="@style/KeypadButton"
+                android:fontFamily="@font/nutino_extrabold"
+                android:id="@+id/key0" android:text="0"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_gravity="right"
+
+
+            >
+            <ImageView
+                android:id="@+id/keyDel"
+                android:layout_width="24.62dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+               android:background="@android:color/transparent"
+
+                android:src="@drawable/dlt"
+
+                android:scaleType="centerInside"
+                android:contentDescription="@string/delete" />
+        </FrameLayout>
+    </GridLayout>
+
+    <!-- Forgot -->
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_pass"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:fontFamily="@font/nunito_medium"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

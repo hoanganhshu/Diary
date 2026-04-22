@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+    <!-- Base theme chung -->
+    <!-- Base chung -->
+    <style name="Theme.MyApp.Base" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Text color mặc định -->
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Màu nút (Material color system) -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+
+    <!-- Default -->
+    <style name="Theme.MyApp.Default" parent="Theme.MyApp.Base">
+        <item name="android:textColor">@color/theme_default_text</item>
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <!-- Flowers -->
+    <style name="Theme.MyApp.Flowers" parent="Theme.MyApp.Base">
+        <item name="android:textColor">@color/theme_flowers_text</item>
+        <item name="colorPrimary">@color/theme_flowers_button</item>
+    </style>
+
+    <!-- Fruit -->
+    <style name="Theme.MyApp.Fruit" parent="Theme.MyApp.Base">
+        <item name="android:textColor">@color/theme_fruit_text</item>
+        <item name="colorPrimary">@color/theme_fruit_button</item>
+    </style>
+
+    <!-- Color -->
+    <style name="Theme.MyApp.Color" parent="Theme.MyApp.Base">
+        <item name="android:textColor">@color/theme_color_text</item>
+        <item name="colorPrimary">@color/theme_color_button</item>
+    </style>
+
+
+</resources>

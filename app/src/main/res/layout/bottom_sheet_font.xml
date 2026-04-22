@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="false"
+    android:nestedScrollingEnabled="true"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/font"
+            android:fontFamily="@font/nutino_extrabold"
+            android:layout_marginTop="10dp"
+
+            android:gravity="center"
+
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            >
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/Align"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+
+                app:singleSelection="true"
+                app:checkedButton="@id/btnAlignLeft">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAlignLeft"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/alignleft"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAlignCenter"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/aligncenter"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAlignRight"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/alignright"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/textStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStyleNormal"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/normal"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStyleItalic"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/nonormal"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStyleBold"
+                    style="@style/ToggleButton.Style"
+                    android:gravity="center"
+                    app:icon="@drawable/bold"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colorRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fontstyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+
+            android:nestedScrollingEnabled="true"
+
+            android:layout_height="200dp"
+
+
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

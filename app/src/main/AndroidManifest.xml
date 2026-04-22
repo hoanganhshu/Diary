@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:name=".MyApp"
+        android:localeConfig="@xml/locales_config"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="view.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.PolicyActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.SecurityQuestionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <activity
+            android:name="view.PassCodeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.MoodGallery"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.ThemeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <activity
+            android:name="view.SearchActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.AddDiary"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <!--
+<activity
+            android:theme="@style/Base.CardView"
+            android:name="view.HomeActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name="view.SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="view.SecurityQuestion"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.HomeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.OnBoard1"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.OnBoard3"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.OnBoard2"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.UnlockPattern"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="view.CalendarActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvValue"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:textSize="32sp"
+    android:textStyle="bold"
+
+    android:fontFamily="@font/nunito_bold"
+    android:layout_margin="15dp"
+    android:textColor="#B3B3B3" />
