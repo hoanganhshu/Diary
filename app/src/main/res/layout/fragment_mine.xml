@@ -62,7 +62,7 @@
                                 android:layout_width="@dimen/sdp_65_5"
                                 android:layout_height="@dimen/sdp_100"
                                 android:layout_marginStart="@dimen/sdp_15"
-                                android:background="@drawable/bg_home_0"
+                                android:background="@drawable/fix1"
                                 android:foreground="?attr/selectableItemBackground"
                                 android:clipToOutline="true" />
 
@@ -72,7 +72,7 @@
                                 android:layout_height="@dimen/sdp_100"
                                 android:layout_marginStart="@dimen/sdp_9_21"
 
-                                android:background="@drawable/bg_home_1"
+                                android:background="@drawable/fix2"
                                 android:clipToOutline="true" />
 
                             <!-- Item theme 3 -->
@@ -80,7 +80,7 @@
                                 android:layout_width="@dimen/sdp_65_5"
                                 android:layout_height="@dimen/sdp_100"
                                 android:layout_marginStart="@dimen/sdp_9_21"
-                                android:background="@drawable/bg_home_2"
+                                android:background="@drawable/fix3"
                                 android:clipToOutline="true" />
 
 
@@ -88,7 +88,7 @@
                                 android:layout_width="@dimen/sdp_65_5"
                                 android:layout_height="@dimen/sdp_100"
                                 android:layout_marginStart="@dimen/sdp_9_21"
-                                android:background="@drawable/bg_home_3"
+                                android:background="@drawable/fix4"
                                 android:clipToOutline="true" />
 
                         </LinearLayout>

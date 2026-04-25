@@ -58,7 +58,7 @@ class HomeActivity :  BaseActivity<ActivityHomeBinding>() {
         }
         if (supportFragmentManager.findFragmentById(R.id.container) == null) {
             replaceFragment(DiaryFragment())
-            mBinding.topAppBar.title = "My Diary"
+            mBinding.topAppBar.title = getString(R.string.title_journal)
             mBinding.bottomNav.selectedItemId = R.id.nav_diary
         }
 
@@ -66,12 +66,12 @@ class HomeActivity :  BaseActivity<ActivityHomeBinding>() {
             when (it.itemId) {
                 R.id.nav_diary -> {
                     replaceFragment(DiaryFragment())
-                    mBinding.topAppBar.title="My Diary"
+                    mBinding.topAppBar.title = getString(R.string.title_journal)
                     true
                 }
                 R.id.nav_mine -> {
                     replaceFragment(MineFragment())
-                    mBinding.topAppBar.title="Mine"
+                    mBinding.topAppBar.title = getString(R.string.title_profile)
                     true
                 }
                 R.id.nav_center -> {

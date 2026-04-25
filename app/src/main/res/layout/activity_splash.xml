@@ -28,7 +28,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/splash" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
 
         <ImageView
@@ -41,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageView2"
-            app:srcCompat="@drawable/textsplash" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
 
         <ImageView
@@ -54,7 +54,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/bee" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

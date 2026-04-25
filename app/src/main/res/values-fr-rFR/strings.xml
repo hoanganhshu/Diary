@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mon application</string>
+    <string name="app_name">MomentNest</string>
     <string name="delete">Supprimer</string>
     <string name="diary_something">JOURNAL</string>
     <string name="skip">Ignorer</string>

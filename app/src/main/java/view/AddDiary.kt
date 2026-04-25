@@ -385,7 +385,7 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
             if (isGranted) {
                 openCamera()
             } else {
-                Toast.makeText(this, "Cần quyền camera để chụp ảnh", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.camera_permission_denied), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -794,14 +794,14 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
         mBinding.loadingOverlay.visibility = View.VISIBLE
         mBinding.progressCircle.visibility = View.VISIBLE
         mBinding.imgDone.visibility = View.GONE
-        mBinding.tvLoadingStatus.text = "Saving..."
+        mBinding.tvLoadingStatus.text = getString(R.string.saving)
         mBinding.btnSave.isEnabled = false
     }
 
     private fun showDone() {
         mBinding.progressCircle.visibility = View.GONE
         mBinding.imgDone.visibility = View.VISIBLE
-        mBinding.tvLoadingStatus.text = "Done!"
+        mBinding.tvLoadingStatus.text = getString(R.string.saved_done)
     }
 
 

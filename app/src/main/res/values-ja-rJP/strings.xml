@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">私のアプリ</string>
+    <string name="app_name">MomentNest</string>
     <string name="delete">削除</string>
     <string name="diary_something">日記</string>
     <string name="skip">スキップ</string>

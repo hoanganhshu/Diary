@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Meine App</string>
+    <string name="app_name">MomentNest</string>
     <string name="delete">Löschen</string>
     <string name="diary_something">TAGEBUCH</string>
     <string name="skip">Überspringen</string>

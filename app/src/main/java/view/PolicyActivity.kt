@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
 import com.diary.app.demo.BaseActivity
+import com.diary.app.demo.R
 import com.diary.app.demo.databinding.ActivityPolicyBinding
 
 class PolicyActivity : BaseActivity<ActivityPolicyBinding>() {
@@ -15,7 +16,7 @@ class PolicyActivity : BaseActivity<ActivityPolicyBinding>() {
     override fun initViews() {
         super.initViews()
 
-        val policyUrl = "https://www.facebook.com/chinchin891?locale=vi_VN"
+        val policyUrl = getString(R.string.privacy_policy_url)
 
         mBinding.linkpolicy.text = policyUrl
 

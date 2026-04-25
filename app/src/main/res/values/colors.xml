@@ -4,26 +4,26 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#E70808</color>
 
-        <color name="purple_500">#A77AF6</color>
-        <color name="lighter_gray">#FF0000</color>
-    <color name="gray_500">#A77AF6</color>
-        <color name="purple_transparent">#80A77AF6</color>
-        <color name="toggle_font_select">#BD98EA</color>
+    <color name="purple_500">#4E6EF2</color>
+    <color name="lighter_gray">#EFEFEF</color>
+    <color name="gray_500">#7B8AA8</color>
+    <color name="purple_transparent">#804E6EF2</color>
+    <color name="toggle_font_select">#7E95F5</color>
     <color name="toggle_font">#DADADA</color>
     <color name="icon_unselect">#716E6E</color>
-    <color name="yellow">#F0DA0E</color>
+    <color name="yellow">#F7C948</color>
     <color name="icon_select">#FFFFFF</color>
     <color name="theme_default_text">#FFFFFF</color>
-    <color name="theme_default_button">#BD98EA</color>
+    <color name="theme_default_button">#4E6EF2</color>
 
-    <color name="theme_flowers_text">#EF97AB</color>
-    <color name="theme_flowers_button">#EF97AB</color>
+    <color name="theme_flowers_text">#D64D8B</color>
+    <color name="theme_flowers_button">#D64D8B</color>
 
-    <color name="theme_fruit_text">#EDBA8B</color>
-    <color name="theme_fruit_button">#EDBA8B</color>
+    <color name="theme_fruit_text">#EC8B3D</color>
+    <color name="theme_fruit_button">#EC8B3D</color>
 
-    <color name="theme_color_text">#EB6931</color>
-    <color name="theme_color_button">#EB6931</color>
+    <color name="theme_color_text">#129E8A</color>
+    <color name="theme_color_button">#129E8A</color>
 
 
 

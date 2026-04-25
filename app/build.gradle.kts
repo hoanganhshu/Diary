@@ -16,7 +16,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.diary.app.demo"
+        applicationId = "com.momentnest.journal"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

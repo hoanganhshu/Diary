@@ -61,7 +61,7 @@ android:layout_marginTop="@dimen/sdp_5">
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/themedemo" />
+        android:src="@drawable/fix1" />
 </com.google.android.material.card.MaterialCardView>
 
 
@@ -83,7 +83,7 @@ android:layout_marginTop="@dimen/sdp_5">
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/sdp_7"
-            android:background="@drawable/bg_home_0"
+            android:background="@drawable/fix1"
             android:clipToOutline="true" />
 
         <FrameLayout
@@ -91,7 +91,7 @@ android:layout_marginTop="@dimen/sdp_5">
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/sdp_7"
-            android:background="@drawable/bg_home_1"
+            android:background="@drawable/fix2"
             android:clipToOutline="true" />
 
         <FrameLayout
@@ -99,14 +99,14 @@ android:layout_marginTop="@dimen/sdp_5">
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/sdp_7"
-            android:background="@drawable/bg_home_2"
+            android:background="@drawable/fix3"
             android:clipToOutline="true" />
 
         <FrameLayout
             android:layout_width="@dimen/sdp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/bg_home_3"
+            android:background="@drawable/fix4"
             android:clipToOutline="true" />
     </LinearLayout>
 

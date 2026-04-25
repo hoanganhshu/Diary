@@ -28,10 +28,10 @@ class ThemeActivity : BaseActivity<ActivityThemeBinding>() {
         )
 
         val themes = listOf(
-            R.drawable.themedemo,
-            R.drawable.themedemo1,
-            R.drawable.themedemo2,
-            R.drawable.themedemo3
+            R.drawable.fix1,
+            R.drawable.fix2,
+            R.drawable.fix3,
+            R.drawable.fix4
         )
         val themesreal=listOf(
             R.drawable.fix1,
