@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nhật Ký</string>
+    <string name="delete">Xóa</string>
+    <string name="diary_something">VIẾT GÌ ĐÓ</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="save">Lưu</string>
+    <string name="done">Xong</string>
+    <string name="cancel">Hủy</string>
+    <string name="often"> Bạn viết nhật ký thường xuyên không?</string>
+    <string name="please_select_your_option">Vui lòng chọn một tùy chọn</string>
+    <string name="often_1">Tôi mới bắt đầu</string>
+    <string name="often_2">Đã từng viết từ lâu rồi</string>
+    <string name="often_3">Thỉnh thoảng </string>
+    <string name="often_4">Thường xuyên</string>
+    <string name="age">Bạn bao nhiêu tuổi?</string>
+    <string name="age_2">18-25</string>
+    <string name="age_3">26-35</string>
+    <string name="age_4">36-45</string>
+    <string name="age_5">46 trở lên</string>
+    <string name="age_1">Dưới 18</string>
+
+    <string name="why">Tại sao bạn muốn viết nhật ký? </string>
+    <string name="why_1">Giải tỏa căng thẳng</string>
+    <string name="why_2">Nhìn lại cuộc sống hằng ngày</string>
+    <string name="why_3">Hướng tới lối sống tích cực</string>
+    <string name="why_4">Khơi dậy sự sáng tạo</string>
+    <string name="why_5">Chỉ muốn ghi lại điều gì đó</string>
+
+    <string name="input_pin">Nhập mã PIN</string>
+    <string name="please_set_security">Vui lòng đặt câu hỏi bảo mật phòng khi bạn quên mã PIN </string>
+    <string name="forget_pass">Quên mật khẩu</string>
+    <string name="set_pin">Đặt mã PIN</string>
+    <string name="confirm_pin">Xác nhận mã PIN</string>
+
+    <string name="title">Tiêu đề</string>
+    <string name="not_save_yet">Bạn có muốn lưu các thay đổi đã thực hiện không?</string>
+    <string name="discard">HỦY BỎ</string>
+    <string name="starting_here"> Bắt đầu tại đây ...</string>
+    <string name="select_date"> Chọn ngày</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="show_hours"> 08:00 SA</string>
+    <string name="continute"> TIẾP TỤC</string>
+    <string name ="you_can_select"> Bạn có thể chọn nhiều hơn một tùy chọn</string>
+    <string name="select_one">Vui lòng chọn một tùy chọn</string>
+    <string name ="favorite_color">Màu yêu thích của bạn là gì?</string>
+    <string name="favorite_movie">Bộ phim yêu thích của bạn là gì?</string>
+    <string name="favorite_food">Món ăn yêu thích của bạn là gì?</string>
+    <string name="input_your_anwser">Vui lòng nhập câu trả lời của bạn tại đây</string>
+    <string name="all">Tất cả</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="applied">Đã áp dụng</string>
+    <string name="please_rate_us">Hãy đánh giá ứng dụng!</string>
+    <string name="what_do_you_think_about_app">Bạn nghĩ gì về ứng dụng này?</string>
+
+    <string name="your_pin"> Mã PIN của bạn là</string>
+    <string name="option">Tùy chọn</string>
+    <string name="defaut">Mặc định</string>
+    <string name="ok">OK</string>
+    <string name="security_save">Đã lưu câu hỏi bảo mật.</string>
+
+    <string name="wrong_anwser">Câu trả lời sai!</string>
+    <string name="enter_new_pin">Nhập mã PIN mới</string>
+    <string name="incorrect_pin">Mã PIN hiện tại không đúng</string>
+
+    <string name="enter_your_pin">Nhập mã PIN hiện tại</string>
+    <string name="set_security_title">Đặt câu hỏi bảo mật</string>
+    <string name="question_1">Màu yêu thích của bạn là gì?</string>
+    <string name="hint"> Vui lòng nhập câu trả lời của bạn tại đây</string>
+    <string name="pin_dont_match">Mã PIN không khớp</string>
+    <string name="question_2">Màu yêu thích của bạn là gì?</string>
+    <string name="question_3">Món ăn yêu thích của bạn là gì?</string>
+    <string name="question_4">Bộ phim yêu thích của bạn là gì?</string>
+
+    <string name="my_diary">Nhật Ký Của Tôi</string>
+    <string name="calendar">Lịch</string>
+    <string name="diary">Nhật Ký</string>
+    <string name="mine">Của Tôi</string>
+    <string name="newest">Mới nhất</string>
+    <string name="oldest">Cũ nhất</string>
+    <string name="hanoi"> Hà Nội</string>
+    <string name="no_result"> Không tìm thấy kết quả</string>
+    <string name="write_your_first">Viết bài đầu tiên của bạn tại đây để lưu lại khoảnh khắc </string>
+    <string name="app_theme">Giao diện ứng dụng</string>
+
+    <string name="passcode">Mã khóa</string>
+    <string name="mood_gallery">Thư viện cảm xúc</string>
+    <string name="skip_mood_selection">Bỏ qua chọn cảm xúc</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="date_time">Ngày &amp; Giờ</string>
+    <string name="private_policy">Chính sách riêng tư</string>
+    <string name="share">Chia sẻ</string>
+    <string name="rate">Đánh giá</string>
+    <string name="later">Để sau</string>
+    <string name="send_rate">Gửi đánh giá</string>
+    <string name="notification">Thông báo</string>
+    <string name="repeat">Lặp lại</string>
+    <string name="how_are_you">Hôm nay bạn thế nào?</string>
+    <string name="see_more">Xem thêm cảm xúc</string>
+
+    <string name="s">CN</string>
+    <string name="m">T2</string>
+    <string name="t">T3</string>
+    <string name="w">T4</string>
+    <string name="th">T5</string>
+    <string name="f">T6</string>
+    <string name="sa">T7</string>
+    <string name="set_time">Đặt giờ</string>
+    <string name="hours">Giờ</string>
+    <string name="minutes">Phút</string>
+    <string name="passcode_protect">Bảo vệ bằng mã khóa</string>
+    <string name="change_passcode">Đổi mã khóa</string>
+    <string name="change_security_question">Đổi câu hỏi bảo mật</string>
+
+    <string name="first_day">Ngày đầu tuần</string>
+    <string name="date_format">Định dạng ngày</string>
+    <string name="time_format">Định dạng giờ</string>
+    <string name="system_default">Mặc định hệ thống</string>
+    <string name="monday">Thứ Hai</string>
+    <string name="saturday">Thứ Bảy</string>
+    <string name="sunday">Chủ Nhật</string>
+
+    <string name="theme">Giao diện</string>
+    <string name="apply">Áp dụng</string>
+    <string name="delete_this_entry">Xóa bài này?</string>
+    <string name="delete_this_entry_text">Xóa bài viết này là vĩnh viễn và không thể hoàn tác</string>
+
+    <string name="font">Phông chữ</string>
+    <string name="back_ground">Hình nền</string>
+    <string name="simple">Đơn giản</string>
+    <string name="animal">Động vật</string>
+    <string name="food">Đồ ăn</string>
+    <string name="holiday">Lễ hội</string>
+    <string name="not_save">Bạn chưa đặt câu hỏi bảo mật.</string>
+    <string name="set_pin_security">Bạn chưa đặt mã PIN</string>
+    <string name="month">Tháng</string>
+    <string name="year">Năm\n</string>
+    <string name="not_save_title">Chưa lưu</string>
+    <string name="what_your_favorite_color">Màu yêu thích của bạn là gì?</string>
+    <string name="today">Hôm nay</string>
+    <string name="photo">Ảnh</string>
+    <string name="requestpermission">Cần quyền truy cập ảnh để hiển thị thư viện</string>
+</resources>

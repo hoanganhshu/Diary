@@ -1,24 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_35sdp"
-    android:padding="5dp"
-    android:background="@drawable/bg_item_selectablestylefont"
-    android:gravity="center_horizontal"
-    android:layout_marginBottom="4dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     app:cardCornerRadius="15dp"
-    android:layout_marginEnd="8dp"
-
+    app:cardElevation="0dp"
+    app:strokeWidth="1.5dp"
+    app:strokeColor="#DDDDDD"
     android:clickable="true"
-    android:layout_margin="6dp"
     android:focusable="true">
 
-    <ImageView
-        android:id="@+id/imgstylefont"
+    <TextView
+        android:id="@+id/tvstylefont"
         android:layout_width="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="40dp"
-        android:src="@drawable/nunito" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
 
 </com.google.android.material.card.MaterialCardView>

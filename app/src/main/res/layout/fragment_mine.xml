@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_20sdp"
     android:fillViewport="true">
 
 
@@ -16,7 +17,7 @@
             <!-- Card 1: App Theme -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardAppTheme"
-                android:layout_width="@dimen/sdp_330"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/sdp_179"
 
                 android:layout_gravity="center_horizontal"
@@ -100,7 +101,7 @@
             <!-- Card 2: Notification -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardNotification"
-                android:layout_width="@dimen/sdp_330"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/sdp_12"
@@ -165,7 +166,7 @@
             <!-- Card 4: Settings (Passcode, Mood Gallery, Skip Mood Selection, Language, Date & Time) -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardSettings"
-                android:layout_width="@dimen/sdp_330"
+                android:layout_width="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/sdp_12"
@@ -276,7 +277,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardOthers"
-                android:layout_width="@dimen/sdp_330"
+                android:layout_width="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/sdp_12"

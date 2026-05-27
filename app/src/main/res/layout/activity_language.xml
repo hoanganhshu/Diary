@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -76,9 +75,12 @@
                     android:padding="@dimen/_14sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/en"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
 
                     <LinearLayout
@@ -184,11 +186,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/en"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbEnGB"
                             android:layout_width="wrap_content"
@@ -219,11 +224,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/india"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbEnIN"
                             android:layout_width="wrap_content"
@@ -356,11 +364,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/mexico"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbEsMX"
                             android:layout_width="wrap_content"
@@ -388,9 +399,12 @@
                     android:padding="@dimen/_14sdp">
 
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/portuguese"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
 
                     <LinearLayout
@@ -457,11 +471,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/portuguese"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbPtPT"
                             android:layout_width="wrap_content"
@@ -492,11 +509,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/eu"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbPtEU"
                             android:layout_width="wrap_content"
@@ -527,11 +547,14 @@
                             android:textSize="18sp"
                             android:textColor="#111"/>
                         <ImageView
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
                             android:src="@drawable/brazin"
                             android:layout_marginEnd="@dimen/_12sdp"
-                            android:contentDescription="Flag"/>
+                            android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
                         <RadioButton
                             android:id="@+id/rbPtBR"
                             android:layout_width="wrap_content"
@@ -557,9 +580,12 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/_14sdp">
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/india"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
 
                     <LinearLayout
@@ -607,9 +633,12 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/_14sdp">
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/french"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
                     <LinearLayout
                         android:layout_width="@dimen/_0sdp"
@@ -656,9 +685,12 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/_14sdp">
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/japan"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
                     <LinearLayout
                         android:layout_width="@dimen/_0sdp"
@@ -705,9 +737,12 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/_14sdp">
                     <ImageView
-                        android:layout_width="@dimen/_32sdp"
-                        android:layout_height="@dimen/_32sdp"
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
                         android:src="@drawable/germany"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Flag"/>
                     <LinearLayout
                         android:layout_width="@dimen/_0sdp"
@@ -739,7 +774,61 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Vietnamese -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_16sdp"
+                app:cardElevation="@dimen/_0sdp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_14sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp"
+                        android:src="@drawable/ic_vietnam"
+                        android:background="@drawable/bg_circle_flag"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Flag"/>
+                    <LinearLayout
+                        android:layout_width="@dimen/_0sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vietnamese"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="#111"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tiếng Việt"
+                            android:textSize="14sp"
+                            android:textColor="#8A8A8A"/>
+                    </LinearLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/rbViVN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.diary.app.demo.MoodGroup
+import com.diary.app.demo.data.local.MoodGroup
 import com.diary.app.demo.R
 
 

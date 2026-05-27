@@ -1,25 +1,20 @@
-package com.diary.app.demo.com.diary.app.demo.adapter
+package com.diary.app.demo.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.diary.app.demo.R
 
 class FontAdapter(
-    private val items: List<Int>,
-
+    private val items: List<Pair<String, Int>>,
     private val onItemClick: (Int) -> Unit
 ) : RecyclerView.Adapter<FontAdapter.FontViewHolder>() {
 
-//    private val items: MutableList<Int> = mutableListOf()
-//    fun submitData(list:List<Int>){
-//        return newList = list.filter { it == 2 }
-//    }
-
     class FontViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val img: ImageView = itemView.findViewById(R.id.imgstylefont)
+        val tvFont: TextView = itemView.findViewById(R.id.tvstylefont)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FontViewHolder {
@@ -29,10 +24,15 @@ class FontAdapter(
     }
 
     override fun onBindViewHolder(holder: FontViewHolder, position: Int) {
-        val fontResId = items[position]
-        holder.img.setImageResource(fontResId)
+        val fontItem = items[position]
+        holder.tvFont.text = fontItem.first
 
-
+        try {
+            val typeface = ResourcesCompat.getFont(holder.itemView.context, fontItem.second)
+            holder.tvFont.typeface = typeface
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
 
         holder.itemView.setOnClickListener {
             onItemClick(position)

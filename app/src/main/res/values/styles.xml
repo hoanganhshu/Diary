@@ -15,4 +15,16 @@
         <item name="android:fontFamily">@font/nutino_extrabold</item>
     </style>
 
+    <!-- Style cho ô tiêu đề thứ trong tuần của custom calendar -->
+    <style name="CalDayHeader">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFFCC</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.diary.app.demo.R
-import com.diary.app.demo.database.DiaryEntity
+import com.diary.app.demo.data.local.DiaryEntity
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

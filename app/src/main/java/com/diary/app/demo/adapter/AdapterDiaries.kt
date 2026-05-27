@@ -1,13 +1,13 @@
 package com.diary.app.demo.adapter
 
-import DashedDividerDecoration
+import com.diary.app.demo.util.DashedDividerDecoration
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.diary.app.demo.R
-import com.diary.app.demo.database.DiaryEntity
+import com.diary.app.demo.data.local.DiaryEntity
 
 
 data class DiaryCard(
