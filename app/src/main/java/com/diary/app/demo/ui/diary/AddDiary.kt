@@ -905,7 +905,7 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
                     mBinding.edtContent.gravity = d.align
                     mBinding.edtTitle.gravity = d.align
 
-                    val parent = mBinding.root
+                    val parent = mBinding.root as androidx.constraintlayout.widget.ConstraintLayout
                     val set = ConstraintSet()
                     set.clone(parent)
                     if (d.align == Gravity.CENTER) {
