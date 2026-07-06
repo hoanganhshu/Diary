@@ -20,7 +20,7 @@ import com.diary.app.demo.adapter.AdapterDiaries
 import com.diary.app.demo.adapter.DiaryCard
 import com.diary.app.demo.data.local.DiaryEntity
 import com.diary.app.demo.databinding.FragmentDiaryBinding
-import com.diary.app.demo.ui.calendar.CalendarActivity
+import com.diary.app.demo.ui.diary.AddDiary
 import com.diary.app.demo.service.GetWeatherApi
 import com.diary.app.demo.ui.home.viewmodel.HomeViewModel
 import com.google.android.gms.location.CurrentLocationRequest
@@ -46,8 +46,9 @@ class DiaryFragment : Fragment() {
     private var currentDiaryList: List<DiaryEntity> = emptyList()
     private val adapter by lazy {
         AdapterDiaries { diary ->
-            val intent = Intent(requireContext(), CalendarActivity::class.java)
+            val intent = Intent(requireContext(), AddDiary::class.java)
             intent.putExtra("diary_id", diary.id)
+            intent.putExtra("show", false)
             startActivity(intent)
         }
     }

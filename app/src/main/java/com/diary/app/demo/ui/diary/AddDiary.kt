@@ -278,17 +278,7 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
 
 
 
-        val showItems: Boolean = intent.getBooleanExtra("show", false)
         id = intent.getIntExtra("diary_id", 0)
-        if (!showItems) {
-            mBinding.bottomNavAddDiary.visibility = View.GONE
-            mBinding.btnSave.visibility = View.GONE
-            loadDiaryDetail()
-            showDiaryBottomSheet()
-        } else {
-            mBinding.bottomNavAddDiary.visibility = View.VISIBLE
-            mBinding.btnSave.visibility = View.VISIBLE
-        }
 
         imageAdapter = ImagesAdapter()
         val calendar = Calendar.getInstance()
@@ -642,6 +632,17 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
                 }
             }
         }
+
+        val showItems: Boolean = intent.getBooleanExtra("show", false)
+        if (!showItems) {
+            mBinding.bottomNavAddDiary.visibility = View.GONE
+            mBinding.btnSave.visibility = View.GONE
+            loadDiaryDetail()
+            showDiaryBottomSheet()
+        } else {
+            mBinding.bottomNavAddDiary.visibility = View.VISIBLE
+            mBinding.btnSave.visibility = View.VISIBLE
+        }
     }
     private fun showNotSaveYetBottomSheet() {
         val dialog = BottomSheetDialog(this)
@@ -853,6 +854,80 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
                     mBinding.edtTitle.setText(d.title)
                     mBinding.edtContent.setText(d.description)
 
+                    // Load images
+                    if (d.uriListImage.isNotEmpty()) {
+                        mBinding.rvImages.visibility = View.VISIBLE
+                        imageAdapter.submitList(d.uriListImage)
+                    } else {
+                        mBinding.rvImages.visibility = View.GONE
+                    }
+
+                    // Load background/theme
+                    d.theme?.let { bgResId ->
+                        selectedBackground = bgResId
+                        mBinding.cardEntry.setCardBackgroundColor(Color.TRANSPARENT)
+                        mBinding.root.setBackgroundResource(bgResId)
+                    }
+
+                    // Load emoji
+                    emoji = d.emoji
+                    if (d.emoji != 0) {
+                        mBinding.emoji.setImageResource(d.emoji)
+                        mBinding.emoji.background = null
+                        mBinding.emoji.visibility = View.VISIBLE
+                    } else {
+                        mBinding.emoji.visibility = View.GONE
+                    }
+
+                    // Load font style
+                    styletext = d.style
+                    if (d.style != 0) {
+                        try {
+                            val tf = ResourcesCompat.getFont(this@AddDiary, d.style)
+                            mBinding.edtContent.typeface = tf
+                            mBinding.edtTitle.typeface = tf
+                            mBinding.day.typeface = tf
+                            mBinding.month.typeface = tf
+                        } catch (e: Exception) {
+                            Log.e("AddDiary", "Error loading font style", e)
+                        }
+                    }
+
+                    // Load text color
+                    textcolor = d.color
+                    mBinding.edtContent.setTextColor(d.color)
+                    mBinding.edtTitle.setTextColor(d.color)
+                    mBinding.day.setTextColor(d.color)
+                    mBinding.month.setTextColor(d.color)
+
+                    // Load alignment
+                    textalign = d.align
+                    mBinding.edtContent.gravity = d.align
+                    mBinding.edtTitle.gravity = d.align
+
+                    val parent = mBinding.root
+                    val set = ConstraintSet()
+                    set.clone(parent)
+                    if (d.align == Gravity.CENTER) {
+                        set.clear(R.id.constraintday, ConstraintSet.START)
+                        set.clear(R.id.constraintday, ConstraintSet.END)
+                        set.centerHorizontally(
+                            R.id.constraintday,
+                            ConstraintSet.PARENT_ID
+                        )
+                    } else {
+                        set.clear(R.id.constraintday, ConstraintSet.END)
+                        set.connect(
+                            R.id.constraintday,
+                            ConstraintSet.START,
+                            ConstraintSet.PARENT_ID,
+                            ConstraintSet.START
+                        )
+                        set.setMargin(R.id.constraintday, ConstraintSet.START, 24)
+                    }
+                    set.applyTo(parent)
+
+                    selectedDayKey = d.day
 
                     try {
                         val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
@@ -867,7 +942,6 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
                         mBinding.day.setText(dayText)
                         mBinding.month.setText(monthYearText)
                     } catch (e: Exception) {
-
                         val date = Date(d.createdAt)
                         val dayText = SimpleDateFormat("dd", Locale.ENGLISH).format(date)
                         val monthYearText =
@@ -875,8 +949,12 @@ class AddDiary : BaseActivity<ActivityAddDiaryBinding>() {
                         mBinding.day.setText(dayText)
                         mBinding.month.setText(monthYearText)
                     }
+
+                    hasUnsavedChanges = false
                 }
-    }}}
+            }
+        }
+    }
 
 
 }

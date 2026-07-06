@@ -37,8 +37,24 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
         // Xử lý system bar insets để bottomNav và curveBg sát đáy màn hình
         ViewCompat.setOnApplyWindowInsetsListener(mBinding.root) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            mBinding.curveBg.updatePadding(bottom = systemBars.bottom)
-            mBinding.bottomNav.updatePadding(bottom = systemBars.bottom)
+
+            // Cập nhật chiều cao và padding của curveBg
+            val curveParams = mBinding.curveBg.layoutParams
+            val density = resources.displayMetrics.density
+            curveParams.height = (72 * density).toInt() + systemBars.bottom
+            mBinding.curveBg.layoutParams = curveParams
+            mBinding.curveBg.setPadding(0, 0, 0, systemBars.bottom)
+
+            // Cập nhật padding bottom của bottomNav
+            mBinding.bottomNav.updatePadding(
+                bottom = systemBars.bottom
+            )
+
+            // Cập nhật margin bottom của nút center "+"
+            val centerParams = mBinding.centerButton.layoutParams as androidx.constraintlayout.widget.ConstraintLayout.LayoutParams
+            centerParams.bottomMargin = (32 * density).toInt() + systemBars.bottom
+            mBinding.centerButton.layoutParams = centerParams
+
             insets
         }
 

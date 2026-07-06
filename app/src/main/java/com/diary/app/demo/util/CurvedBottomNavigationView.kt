@@ -42,11 +42,12 @@ class CurvedBottomNavigationView @JvmOverloads constructor(
 
         val W = w.toFloat()
         val H = h.toFloat()
+        val activeH = (h - paddingBottom).toFloat()
         val top = 0f
 
         val centerX = W / 2f
         val notchSpan = W * notchSpanRatio
-        val depth = H * depthRatio
+        val depth = activeH * depthRatio
         val leftNotch = centerX - notchSpan / 2f
         val rightNotch = centerX + notchSpan / 2f
         val cpInsetX = notchSpan * cpInsetRatio
